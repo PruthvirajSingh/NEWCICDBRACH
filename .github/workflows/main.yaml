@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: Simple Js Actions
         id: greet
-        uses: PruthvirajSingh/NEWCICDBRACH
+        uses: PruthvirajSingh/NEWCICDBRACH/tree/master/.github/workflows
         with:
           who-to-greet: pruthviraj
       - name: Log Gretting Time
