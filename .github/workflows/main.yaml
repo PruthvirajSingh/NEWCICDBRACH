@@ -1,7 +1,7 @@
 name: CINAME
 on: [push] 
 jobs:
-  simple-git-actions:
+  run-git-actions:
     runs-on: ubuntu-latest
     steps:
       - name: Simple Js Actions
