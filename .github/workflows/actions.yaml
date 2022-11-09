@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: Simple Js Actions
         id: greet
-        uses: actions/hello-world-javascript-action@main
+        uses: actions/hi-world-javascript-action@main
         with:
           who-to-greet: pruthviraj rajput 
       - name: Log Gretting Time
