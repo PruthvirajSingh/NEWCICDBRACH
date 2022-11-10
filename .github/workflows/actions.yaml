@@ -4,9 +4,14 @@ jobs:
   run-git-actions:
     runs-on: ubuntu-latest
     steps:
+      - name: List of files
+        run: |
+          pwd
+          ls -a
+
       - name: Simple Js Actions
         id: greet
-        uses: actions/hi-world-javascript-action@main
+        uses: actions/checkout@main
         with:
           who-to-greet: pruthviraj rajput 
       - name: Log Gretting Time
