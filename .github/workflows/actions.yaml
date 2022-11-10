@@ -16,3 +16,13 @@
   #         who-to-greet: pruthviraj rajput 
   #     - name: Log Gretting Time
   #       run: echo "${{ steps.outputs.time }}"
+name: CicdSetUp
+on: [push]
+jobs:
+  run-git-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch all history for all tags and branches
+      - uses: actions/checkout@v3
+        with:
+         fetch-depth: 0
