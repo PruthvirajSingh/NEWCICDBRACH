@@ -8,7 +8,7 @@ jobs:
         run: |
           pwd
           ls -a
-      - name: checkout
+      - name: checkoutNEw
         
         uses: actions/checkout@main
         
