@@ -11,10 +11,7 @@ jobs:
       - name: checkout
         id: greet
         uses: actions/checkout@main
-      - name: List of files after checkout
-        run: |
-          pwd
-          ls -a
+        
         with:
           who-to-greet: pruthviraj rajput 
       - name: Log Gretting Time
