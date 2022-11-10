@@ -9,10 +9,10 @@ jobs:
           pwd
           ls -a
       - name: checkout
-        id: greet
+        
         uses: actions/checkout@main
         
         with:
           who-to-greet: pruthviraj rajput 
       - name: Log Gretting Time
-        run: echo "${{ steps.greet.outputs.time }}"
+        run: echo "${{ steps.outputs.time }}"
