@@ -18,6 +18,7 @@ jobs:
           who-to-greet: pruthviraj rajput 
       - name: Log Gretting Time
         run: echo "${{ steps.outputs.time }}"
+...
 # ---
 # name: CicdSetUp
 # on: [push]
