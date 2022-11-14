@@ -1,11 +1,7 @@
 
 ---
 name: CINAME
-on:
-  schedule:
-    - cron: "5 * * * *"
-  push:
-      
+on: [push] 
 jobs:
   run-git-actions:
     runs-on: ubuntu-latest
