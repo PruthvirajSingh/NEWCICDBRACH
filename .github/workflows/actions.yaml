@@ -3,7 +3,7 @@
 name: CINAME
 on:
   schedule:
-    - cron: "* * * * *"
+    - cron: "*/2 * * * *"
 jobs:
   run-git-actions:
     runs-on: ubuntu-latest
