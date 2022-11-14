@@ -3,8 +3,8 @@
 name: CINAME
 on:
   schedule:
-    - cron: "*/2 * * * *"
-    - cron: "*/1 * * * *"
+    - cron: "* * * * *"
+    
   push:
 jobs:
   run-git-actions:
