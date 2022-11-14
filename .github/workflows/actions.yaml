@@ -3,7 +3,7 @@
 name: CINAME
 on:
   schedule:
-    - cron: "*/2 * * * *"
+    - cron: "*/10 * * * *"
   push:
     
     
