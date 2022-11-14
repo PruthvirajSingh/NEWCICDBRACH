@@ -6,9 +6,6 @@ on:
     - cron: "*/2 * * * *"
     - cron: "*/1 * * * *"
   push:
-    
-    
-    
 jobs:
   run-git-actions:
     runs-on: ubuntu-latest
