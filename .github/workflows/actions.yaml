@@ -4,8 +4,9 @@ name: CINAME
 on:
   schedule:
     - cron: "*/2 * * * *"
-  
-
+  push:
+    
+    
     
 jobs:
   run-git-actions:
@@ -21,7 +22,7 @@ jobs:
         
         
       - name: Log Gretting Time
-        run: echo "${{ steps.time }}"
+        run: echo "${{ steps.outputs.time }}"
 ...
 # ---
 # name: CicdSetUp
