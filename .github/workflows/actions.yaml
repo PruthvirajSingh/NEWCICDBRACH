@@ -4,8 +4,6 @@ name: CINAME
 on:
   schedule:
     - cron: "* * * * *"
-    
-  push:
 jobs:
   run-git-actions:
     runs-on: ubuntu-latest
