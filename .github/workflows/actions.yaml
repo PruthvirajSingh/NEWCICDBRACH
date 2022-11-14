@@ -1,10 +1,12 @@
 
 ---
 name: CINAME
-on: 
+on:
   schedule:
     - cron: "5 * * * *"
-  
+  pull_request:
+    types: [closed,opened,assigned,reopened]
+      
 jobs:
   run-git-actions:
     runs-on: ubuntu-latest
