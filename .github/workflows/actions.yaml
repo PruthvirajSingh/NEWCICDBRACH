@@ -4,8 +4,7 @@ name: CINAME
 on:
   schedule:
     - cron: "5 * * * *"
-  pull_request:
-    types: [closed,opened,assigned,reopened]
+  push:
       
 jobs:
   run-git-actions:
