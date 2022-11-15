@@ -1,24 +1,24 @@
----
-name: CINAME
-on:
-  schedule:
-    - cron: "0 * * * *"
-  push:
-    branches:
-      - master
-jobs:
-  run-git-actions:
-    runs-on: ubuntu-latest
-    steps:
-      - name: List of files
-        run: |
-          pwd
-          ls -a
-      - name: checkoutNEw
+# ---
+# name: CINAME
+# on:
+#   schedule:
+#     - cron: "0 * * * *"
+#   push:
+#     branches:
+#       - master
+# jobs:
+#   run-git-actions:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: List of files
+#         run: |
+#           pwd
+#           ls -a
+#       - name: checkoutNEw
         
-        uses: actions/checkout@main
+#         uses: actions/checkout@main
         
         
-      - name: Log Gretting Time
-        run: echo "${{ steps.outputs.time }}"
-...
+#       - name: Log Gretting Time
+#         run: echo "${{ steps.outputs.time }}"
+# ...
