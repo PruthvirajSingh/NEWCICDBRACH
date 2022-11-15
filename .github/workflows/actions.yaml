@@ -23,14 +23,17 @@ jobs:
       - name: Log Gretting Time
         run: echo "${{ steps.outputs.time }}"
 ...
-# ---
-# name: CicdSetUp
-# on: [push]
-# jobs:
-#   run-git-actions:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: Fetch all history for all tags and branches
-#       - uses: actions/checkout@v3
-#         with:
-#          fetch-depth: 0
+---
+name: CicdSetUp
+on: [push]
+jobs:
+  run-git-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch all history for all tags and branches
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 14
+      - run: echo "{pruthvirajsing}"
+...
